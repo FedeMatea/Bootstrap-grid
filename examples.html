@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos</title>
+    <!-- Importar hoja de estilos de bootstrap de manera local para cambiar ciertos valores -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light py-5">
+    <!-- Columnas que ocupan distintas medida; se comportan responsivamente -->
+    <div class="container my-5">
+        <h2 class="fs-2">Ocupar distintas medidas</h2>
+        <div class="row mt-2 text-center g-2">
+            <div class="col-12 col-md-8"><div class="bg-success rounded-3 p-3 h-100 d-flex align-items-center justify-content-center"><span class="align-bottom">Ocupo 8 columnas y la fila entera en mobile</span></div></div>
+            <div class="col-md-4"><div class="bg-secondary rounded-3 p-3"> Ocupo el resto de columans o la fila entera en mobile</div></div>
+        </div>
+    </div>
+
+    <!-- Propiedad - justify-content -->
+    <div class="container my-5">
+        <h2 class="fs-2 mt-5 mb-3">Propiedad justify-content</h2>
+    </div>
+    
+    <!-- Justify-content: space-between -->
+    <div class="container my-5">
+        <!-- Si en cualquiera de los siguientes ejemplos agrego una columna con las mismas características ya no tendré justificación -->
+        <h3 class="fs-3 fw-light">Between</h3>
+        <div class="row mt-2 text-center justify-content-between g-2">
+            <!-- Ejemplo -->
+            <!-- <div class="col bg-warning">Ocupo 4 columnas</div> -->
+            <div class="col-4" data-property-value="0"><div class="rounded-3 p-3 bg-success"> Ocupo 4 columnas</div></div>
+            <div class="col-4 fw-light"><div class="rounded-3 p-3 bg-secondary"> Ocupo 4 columnas</div></div>
+        </div>
+    </div>
+
+    <!-- Justify-content: space-around -->
+    <div class="container my-5">
+        <h3 class="fs-3 fw-light">Around</h3>
+        <div class="row mt-2 text-center justify-content-around">
+            <div class="col-4" data-property-value="1"><div class="rounded-3 p-3 bg-success"> Ocupo 4 columnas</div></div>
+            <div class="col-4"><div class="rounded-3 p-3 bg-secondary"> Ocupo 4 columnas</div></div>
+        </div>
+    </div>
+    
+    <!-- Justify-content: evenly -->
+    <div class="container my-5">
+        <h3 class="fs-3 fw-light">Evenly</h3>
+        <div class="row mt-2 text-center justify-content-evenly">
+            <div class="col-4" data-property-value="2"><div class="rounded-3 p-3 bg-success"> Ocupo 4 columnas</div></div>
+            <div class="col-4"><div class="rounded-3 p-3 bg-secondary"> Ocupo 4 columnas</div></div>
+        </div>
+    </div>
+
+    <!-- Justify-content: center -->
+    <div class="container my-5">
+        <h3 class="fs-3 fw-light">Center</h3>
+        <div class="row mt-2 text-center justify-content-center">
+            <div class="col-4" data-property-value="3"><div class="rounded-3 p-3 bg-success"> Ocupo 4 columnas</div></div>
+            <div class="col-4"><div class="rounded-3 p-3 bg-secondary"> Ocupo 4 columnas</div></div>
+        </div> 
+    </div>
+
+    <!-- Oculta algo en mobile, y cambia su disposición en distintos @media -->
+    <div class="container mt-5">
+        <h3 class="fs-3 fw-light d-none d-sm-block">Oculta algo en mobile, y cambia su disposición en distintos @media</h3>
+        <div class='d-none d-sm-block d-md-flex' style='height: 300px'>
+            <div class='h-50 w-100 bg-success rounded-3'></div>
+            <div class='h-50 w-100 bg-secondary rounded-3'></div>
+        </div>  
+    </div>
+
+    <!-- Fila de 12 elementos -->
+    <div class="container">
+        <h2 class="fs-2 mb-3">Ocupar la misma medida</h2>
+        <div class="row text-center g-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1"><div class="bg-success card-body rounded-3">col-12 <br>col-sm-6 <br> col-md-4 <br>col-lg-3 <br>col-xl-2 <br> col-xxl-1</div></div>
+        </div>
+    </div>
+
+</body>
+</html>

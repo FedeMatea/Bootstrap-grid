@@ -1,0 +1,27 @@
+[data-property-value]   {
+    position: relative;
+}
+
+[data-property-value]::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 5%;
+}
+
+[data-property-value='0']::before {
+    content:'Between'
+}
+
+[data-property-value='1']::before {
+    content:'Around'
+}
+
+[data-property-value='2']::before {
+    content:'Evenly'
+}
+
+[data-property-value='3']::before {
+    content:'Center'
+}
+

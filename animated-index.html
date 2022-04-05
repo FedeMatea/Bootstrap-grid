@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando Bootstrap</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap" rel="stylesheet">
+
+    <!-- Link de CDN de Bootstrap V5.1.3 - Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Importar hoja de estilos de bootstrap de manera local para cambiar ciertos valores -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- Link de animated -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<style>
+    :root {
+  --animate-delay: 500ms;
+}
+</style>
+<body class="bg-dark vw-100">
+  <i class="bi bi-alarm-fill"></i>
+    <header class="container-fluid bg-black py-3 p-0 animate__animated animate__fadeIn">
+    <!-- Componente nav de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 container">
+        <div class="container-fluid p-0 px-md-3">
+          <a class="navbar-brand text-primary fs-3" href="#">Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a target="_blank" class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Documentación</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="  ">Componentes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a target="_blank" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ver más
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a target="_blank" class="dropdown-item" href="https://getbootstrap.com/docs/5.1/examples/#snippets">Ejemplos</a></li>
+                  <li><a target="_blank" class="dropdown-item" href="https://getbootstrap.com/docs/5.1/utilities/background/">Utilidades</a></li>
+                  <li><a target="_blank" class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Hero section -->
+    <div class="container h-100 p-5 my-md-5 text-light d-md-flex animate__animated animate__fadeIn">  
+        <div class="container my-lg-5 py-5 d-flex flex-column d-md-block justify-content-center animate__animated animate__fadeIn animate__delay-2s">
+            <h1 class="fs-1 fw-bold text-primary text-center text-md-start">Diseña sitios web <br>bonitos y responsivos<br>rápido</h1>
+            <a href="https://getbootstrap.com" class="btn btn-primary py-2 px-4 mt-5 align-self-center">Empezar</a>
+        </div>
+        <div class="container my-lg-5 py-5 animate__animated animate__fadeIn animate__delay-3s">
+            <img src="./assets/Bootstrap-logo.png" alt="bootstrap logo"  class="w-50 w-sm-50 mx-auto d-block"> <!--class="img-fluid"-->
+        </div>
+    </div>
+
+    <div id="push-down" class="py-lg-5 my-lg-5"></div>
+
+    <!-- Cards y tabla -->
+    <main class="py-5 mt-5 bg-light animate__animated animate__fadeIn">
+      
+      <!-- Sección de Cards -->  
+      <div class="container">
+            
+        <h2 class="fs-3 fw-bold text-primary text-center text-md-start animate__animated animate__fadeIn animate__delay-2s">Crea tu sección responsiva de cartas</h2>
+
+            <div class="container-fluid row px-3 px-md-0 mt-5 mx-0 justify-content-center justify-content-md-between">
+                <div class="card px-0 mb-5 animate__animated animate__fadeIn animate__delay-2s" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1639544769949-3b7ae9661e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Prueba las cartas de Bootstrap</h5>
+                      <p class="card-text">Bootstrap ofrece varias opciones a la hora de elegir cartas para tu sitio</p>
+                      <a href="#" class="btn btn-primary">Ver opciones</a>
+                    </div>
+                </div>
+
+                <div class="card px-0 mb-5 animate__animated animate__fadeIn animate__delay-3s" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1639544769949-3b7ae9661e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Prueba las cartas de Bootstrap</h5>
+                      <p class="card-text">Bootstrap ofrece varias opciones a la hora de elegir cartas para tu sitio</p>
+                      <a href="#" class="btn btn-primary">Ver opciones</a>
+                    </div>
+                </div>
+
+                <div class="card px-0 mb-5 animate__animated animate__fadeIn animate__delay-4s" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1639544769949-3b7ae9661e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Prueba las cartas de Bootstrap</h5>
+                      <p class="card-text">Bootstrap ofrece varias opciones a la hora de elegir cartas para tu sitio</p>
+                      <a href="#" class="btn btn-primary">Ver opciones</a>
+                    </div>
+                </div>
+
+                <div class="card px-0 mb-5 animate__animated animate__fadeIn animate__delay-5s" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1639544769949-3b7ae9661e7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1505&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Prueba las cartas de Bootstrap</h5>
+                      <p class="card-text">Bootstrap ofrece varias opciones a la hora de elegir cartas para tu sitio</p>
+                      <a href="#" class="btn btn-primary">Ver opciones</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tabla -->
+        <div class="container-fluid px-0 px-sm-3 container-sm my-5">
+          <h2 class="text-primary- fs-3 fw-bold text-primary text-center text-md-start">Trabaja con componentes!</h2>
+          <table class="table table-striped mt-5 text-primary">
+            <thead>
+              <tr>
+                <th scope="col" class="d-none d-sm-block">#</th>
+                <th scope="col" class="px-3 px-sm2">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Mail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="d-none d-sm-block">1</th>
+                <td class="px-3 px-sm2">Pablo</td>
+                <td>Gonzalez</td>
+                <td>@gmail</td>
+              </tr>
+              <tr>
+                <th scope="row" class="d-none d-sm-block">2</th>
+                <td class="px-3 px-sm2">Romina</td>
+                <td>Perez</td>
+                <td>@outlook</td>
+              </tr>
+              <tr>
+                <th scope="row" class="d-none d-sm-block">3</th>
+                <td colspan="2" class="px-3 px-sm2">Juana de Arco</td>
+                <td>@hotmail</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </main>
+
+    <div class="container-fluid bg-light">
+      <footer class="py-3 my-4 container-sm mt-0 animate__animated animate__fadeIn">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentación</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Componentes</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ejemplos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Utilidades</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Matea</p>
+      </footer>
+    </div>  
+</body>
+</html>
