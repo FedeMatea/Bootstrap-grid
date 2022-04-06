@@ -5,8 +5,9 @@
 [data-property-value]::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: 5%;
+    bottom: 100%;
+    left: 2.5%;
+    font-size: calc(1rem + 0.6vh);
 }
 
 [data-property-value='0']::before {
